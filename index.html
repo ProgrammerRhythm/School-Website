@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <img src="/image/logo.png" alt="logo"> -->
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Nirjhor Cantonment Public School and College</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/image/logo.png" alt="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Club</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="/image/Slider1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="/image/Screenshot_1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="/image/slider3.jpg" style="width:100%">
+
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="/image/Screenshot_2.jpg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <div class="text">
+            <h1 id="h1">About Us</h1>
+            <span> We are an academic residential college made up of students, scholars,old <br>  collegians and staff members. Our rich history is the foundation for our values <br> We are diverse, welcoming, accepting and
+                passionate about  being <br> the best we can be. Join us to make your college experience 
+                unforgettable.<br> welcoming, accepting and passionate about being the best we can be.</span>
+        </div>
+        <div class="img">
+            <img src="/image/aboutus.jpg" alt="">
+            <br>
+            <br>
+        </div>
+    </div>
+    <br>
+    <footer>
+        
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+        // var slideIndex = 0;
+        // showSlides();
+
+        // function showSlides() {
+        //     var i;
+        //     var slides = document.getElementsByClassName("mySlides");
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+        //     slideIndex++;
+        //     if (slideIndex > slides.length) { slideIndex = 1 }
+        //     slides[slideIndex - 1].style.display = "block";
+        //     setTimeout(showSlides, 6000); // Change image every 2 seconds
+        // }
+    </script>
+</body>
+
+</html>
