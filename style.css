@@ -126,7 +126,7 @@ header{
   
   height: 85vh;
   background-color: rgba(0, 0, 0, 0);
-  background: url(/image/blur\ \(1\).jpg)no-repeat fixed;
+  background: url(blur\ \(1\).jpg)no-repeat fixed;
  /* background:  linear- */
  /* gradient((rgba(0,0,0.0.75),(rgba(0,0,0.0.75)),url(/image/blur\ \(1\).jpg)no-repeat ; */
 }
@@ -134,7 +134,7 @@ body{
  /* height: 2500vh; */
   max-width: 100%;
   font-family: 'Quicksand', sans-serif;
-  background: url(/image/cool-background\ \(3\).png) no-repeat ;
+  background: url(cool-background\ \(3\).png) no-repeat ;
 
 }
 .text span {
@@ -160,6 +160,6 @@ body{
   left: 55px;
 }
 footer{
-  background:   url(/image/fixed.jpg) no-repeat;
+  background:   url(fixed.jpg) no-repeat;
   height: 60vh;
 }
